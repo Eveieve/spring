@@ -1,9 +1,14 @@
 package me.nanhee.springbootdeveloper.domain;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Entity
+@Entity // 엔티티로 지정
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Article {
 
     @Id // ID필드를 기본키로 지정
@@ -21,22 +26,6 @@ public class Article {
     public Article(String title, String content) { // 빌더 패턴으로 객체 생성 - 객체를 유연하고 직관적으로 생성하기 위해.
         this.title = title;
         this.content = content;
-    }
-
-    protected Article() { // base constructor
-
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getContent() {
-        return content;
     }
 }
 
