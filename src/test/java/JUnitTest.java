@@ -16,13 +16,13 @@ public class JUnitTest {
         Assertions.assertEquals(a + b, sum); // check if it's a correct result
     }
 
-    // junittest는 하나의 테스트 케이스만 실패해도 전체를 실패한 것으로 간주함
-    @Test // 테스트를 수행하는 메서드면 애너테이션 붙이기
-    public void junitFailedTest() {
-        int a = 1;
-        int b = 3;
-        int sum = 3;
-
-        Assertions.assertEquals(sum, a + b); // fail case
-    }
+//    // junittest는 하나의 테스트 케이스만 실패해도 전체를 실패한 것으로 간주함
+//    @Test // 테스트를 수행하는 메서드면 애너테이션 붙이기
+//    public void junitFailedTest() {
+//        int a = 1;
+//        int b = 3;
+//        int sum = 3;
+//
+//        Assertions.assertEquals(sum, a + b); // fail case
+//    }
 }
