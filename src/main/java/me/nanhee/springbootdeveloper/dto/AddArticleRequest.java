@@ -16,6 +16,7 @@ public class AddArticleRequest {
     private String title;
     private String content;
 
+
     public Article toEntity() { // DTO 를 엔티티로 만들어주는 일반 메서드.
         // 빌더 패턴을 이용해 Article 클래스의 생성자를 간접 호출
         return Article.builder().title(title).content(content).build();
