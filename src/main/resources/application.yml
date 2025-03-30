@@ -1,7 +1,15 @@
 spring:
   jpa:
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  h2:
+    console:
+      enabled: true
     show-sql: true
     properties:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
+
+#    실제 데이터 확인 위해 H2 콘솔 활성화 해야 함.
