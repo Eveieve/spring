@@ -1,5 +1,6 @@
 package me.nanhee.springbootdeveloper.domain;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
