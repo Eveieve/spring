@@ -1,0 +1,9 @@
+2025-03-31 19:39:57.648286+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ARTICLE" not found (this database is empty); SQL statement:
+INSERT INTO article (title, content) values ('title 1', 'content 1') [42104-224]
+2025-03-31 19:46:39.570162+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select * from users [42102-224]
+2025-03-31 19:46:39.697191+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select * from users [42102-224]
